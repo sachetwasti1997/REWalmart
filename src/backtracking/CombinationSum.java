@@ -14,10 +14,9 @@ public class CombinationSum {
         if(index >= nums.length || sum < 0){
             return;
         }
-//        if(sum <= nums[index]){
-            tempResult.add(nums[index]);
-            createSumList(tempResult, resList, index, sum - nums[index], nums);
-//        }
+        tempResult.add(nums[index]);
+        createSumList(tempResult, resList, index, sum - nums[index], nums);
+
         tempResult.remove(tempResult.size() - 1);
         createSumList(tempResult, resList, index+1, sum, nums);
     }
