@@ -26,6 +26,6 @@ public class MinPivotRotatedSortedArr {
         return res;
     }
     public static void main(String[] args){
-        System.out.println(findMin(new int[]{6,7,8,9, 10,1,2,3,4,5}));
+        System.out.println(findMin(new int[]{8,9,1,2,3,4,5,6,7}));
     }
 }
